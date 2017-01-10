@@ -5,14 +5,14 @@
 We will start with loading a dataset through simple insert statements (loading with Spark will come!)
 
 1 ) Create the keyspace and table 
-    https://github.com/MurphyRP/DSESpark_day1/blob/master/createKeyspace.cql
+    https://github.com/brianmhess/DSESpark_day1/blob/master/createKeyspace.cql
     
 2) Insert a starter set of location data
-    https://github.com/MurphyRP/DSESpark_day1/blob/master/data/locationSmall.txt
+    https://github.com/brianmhess/DSESpark_day1/blob/master/data/locationSmall.txt
     
 3) Use dsetool to determine (and note) the IP (external IP) of the Master node 
 ```
-<installdir>/bin/dsetool sparkmaster
+<installdir>/bin/dse client-tool spark master-address
 ```
     
 4) Open the Spark-SQL shell
