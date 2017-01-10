@@ -97,7 +97,7 @@ select feature_name from bootcamp.us_locations where state_alpha = 'AZ' order by
 ``` sudo <installdir>/bin/dse spark -total-executor-cores 2 ```
     
     A) What contexts are available?
-    B) For DSE 4.8 and earlier version users, what is different?
+    B) What do they each do?
     
 2) Refresh the Spark Master UI
 
@@ -192,6 +192,7 @@ val states = sqlContext.sql("select distinct(state_alpha) from bootcamp.us_locat
 states.write.format("org.apache.spark.sql.cassandra").options(Map( "table" -> "states", "keyspace" -> "bootcamp")).save()
 ```
     A) What was written to Cassandra?
+    B) Can you think of a way to do this all using Spark SQL?
     
 4) In CQLSH or DevCenter, run
 ```
@@ -246,7 +247,7 @@ arizonaHighPoint.show()
 
 1) Using WGet or SCP, pull/push the file below to your user directory on Spark (the node you are using)
 ```
-https://github.com/MurphyRP/DSESpark_day1/blob/master/simplePySubmit.py
+https://github.com/brianmhess/DSESpark_day1/blob/master/simplePySubmit.py
 ```
 Maybe cd into your home dir and then wget? **Note: wget from GITHub does not use the same URL as the Git UI**
 ```
