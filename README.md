@@ -94,7 +94,7 @@ select feature_name from bootcamp.us_locations where state_alpha = 'AZ' order by
 
 1) Open Spark 
 
-``` sudo <installdir>/bin/dse spark -total-executor-cores 2 ```
+``` sudo <installdir>/bin/dse spark --total-executor-cores 2 ```
     
     A) What contexts are available?
     B) What do they each do?
