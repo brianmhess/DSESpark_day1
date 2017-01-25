@@ -57,7 +57,7 @@ We will start with loading a dataset through simple insert statements (loading w
     
 12) When would you want to set system-wide defaults for these settings?
 
-http://docs.datastax.com/en/datastax_enterprise/5.0/datastax_enterprise/spark/sparkCassProps.html
+http://docs.datastax.com/en/latest-dse/datastax_enterprise/spark/sparkCassandraProperties.html
 
 ## Simple data exploration
 
